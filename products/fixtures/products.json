@@ -4,9 +4,9 @@
         "model":"products.product",
         "fields":{
         "sku":"guitar1",
-        "name":"Fender",
-        "description":"Beautiful guitar",
-        "price":53.99,
+        "name":"Harley Benton SC-450Plus CB Vintage Series",
+        "description":"Body: Mahogany (Entandrophragma cylindricum, Indonesian mahagony/ sapele)",
+        "price":199,
         "category":1,
         "rating":4.6,
         "image_url":"",
@@ -17,14 +17,210 @@
         "pk":2,
         "model":"products.product",
         "fields":{
-        "sku":"bass1",
-        "name":"Yamaha",
-        "description":"Big Bass",
-        "price":53.99,
-        "category":3,
+        "sku":"guitar2",
+        "name":"Epiphone Les Paul Custom Ebony",
+        "description":"Pearloid Block fretboard inlays",
+        "price":635,
+        "category":1,
         "rating":4.6,
         "image_url":"",
+        "image":"guita_2a.png"
+        }
+    },
+    {
+        "pk":3,
+        "model":"products.product",
+        "fields":{
+        "sku":"guitar3",
+        "name":"Harley Benton EX-84 Modern Benton Blue",
+        "description":"Harley Benton EX-84 Modern Ferris Blue, offset body-style electric guitar; pro series; body: mahogani (sapele entandrophrama cylindricum); neck: mahogani (sapele entandrophragma cylindricum); fingerboard: ebony (diospyros celebica);",
+        "price":279,
+        "category":1,
+        "rating":4,
+        "image_url":"",
+        "image":"guita_3a.png"
+        }
+    },
+    {
+        "pk":4,
+        "model":"products.product",
+        "fields":{
+        "sku":"guitar4",
+        "name":"Jackson KVX-MG7 King V X-Series SBK",
+        "description":"Sealed Jackson DieCast machine heads",
+        "price":739,
+        "category":1,
+        "rating":4,
+        "image_url":"",
+        "image":"guita_4a.png"
+        }
+    },
+    {
+        "pk":5,
+        "model":"products.product",
+        "fields":{
+        "sku":"drums1",
+        "name":"Pearl Decade Maple 6pc Satin Gold",
+        "description":"Decade Maple Matte lacquered drum shells, excellent for any situation",
+        "price":739,
+        "category":2,
+        "rating":4.8,
+        "image_url":"",
+        "image":"drums_1a.png"
+        }
+    },
+    {
+        "pk":6,
+        "model":"products.product",
+        "fields":{
+        "sku":"drums2",
+        "name":"Tama Superstar Classic Kit 22 PCLP",
+        "description":"Superstar Classic series maple shell Lacquered shells A Star-Mount tom mount system",
+        "price":1119,
+        "category":2,
+        "rating":4.2,
+        "image_url":"",
+        "image":"drums_2a.png"
+        }
+    },
+    {
+        "pk":7,
+        "model":"products.product",
+        "fields":{
+        "sku":"drums3",
+        "name":"Tama STAR Drum Bubinga White Ebony",
+        "description":"Tama STAR Drum Bubinga Shell Set, part of the factory vault series, limited edition, color: White Ebony (NWE), shell set containing 22'x16' Bass Drum (Bass Drum Hoops in Set color), 10'x07' Tom Tom, 12'x08' Tom Tom, 14'x14' Floor tom, 16'x16' Floor tom, Chrome shell hardware, all shells feature Bubinga Wood in 5mm with 5ply Bubinga and 1 inner ply cordia and 1 outer ply ebony",
+        "price":8999,
+        "category":2,
+        "rating":5,
+        "image_url":"",
+        "image":"drums_3a.png"
+        }
+    },
+    {
+        "pk":8,
+        "model":"products.product",
+        "fields":{
+        "sku":"drums4",
+        "name":"Tama Club Jam Vintage Kit -CMW",
+        "description":"Tama Club Jam, Compact Vintage Shell Kit, LJK48S-CMW, Mersawa- / Poplar shells (6-ply / 7mm), Colour: cream marble wrap, covered shells, Light brown wood hoops for bass drum, Configuration: 18'x12' Bass Drum, 10'x07' Tom, 14'x07' Floortom, 13'x05' Snare, including cymbal arm for mounting on bass drum and tomholder, no further hardware included",
+        "price":449,
+        "category":2,
+        "rating":5,
+        "image_url":"",
+        "image":"drums_4a.png"
+        }
+    },
+    {
+        "pk":9,
+        "model":"products.product",
+        "fields":{
+        "sku":"bass1",
+        "name":"Harley Benton JB-75MN NA Vintage Series",
+        "description":"J-Style, Body: American ash, Bolt-on neck: maple, Fretboard: Maple, Black fretboard binding, Roseacer skunk stripe black block inlays 20 Frets",
+        "price":169,
+        "category":3,
+        "rating":5,
+        "image_url":"",
         "image":"bass_1a.png"
+        }
+    },
+    {
+        "pk":10,
+        "model":"products.product",
+        "fields":{
+        "sku":"bass2",
+        "name":"Marcus Miller V7 Alder-4 AWH 2nd Gen",
+        "description":"Body: elzen, Eendelige hals: esdoorn, Fretboard: ebben, Halsprofiel: C, Scale: 34' (long scale, Topkambreedte: 38 mm, Fretboard radius: 241mm, 20 Medium small frets",
+        "price":485,
+        "category":3,
+        "rating":3.9,
+        "image_url":"",
+        "image":"bass_2a.png"
+        }
+    },
+    {
+        "pk":11,
+        "model":"products.product",
+        "fields":{
+        "sku":"bass3",
+        "name":"Höfner Ignition Cavern SE",
+        "description":"Spruce top Flamed maple back and sides Maple one-piece, neck Heat-treated jatoba fretboard White binding on the top and back, Scale: 760 mm (30'), Nut width: 42mm, 22 Frets",
+        "price":347,
+        "category":3,
+        "rating":3.7,
+        "image_url":"",
+        "image":"bass_3a.png"
+        }
+    },
+    {
+        "pk":12,
+        "model":"products.product",
+        "fields":{
+        "sku":"bass4",
+        "name":"Squier Aff. Jaguar Bass MN H LPB",
+        "description":"Body-poplar, Bolted Neck- Maple, Fretboard-Maple,Fretboard Inlays: Black Dots, Neck Profile: C, Fretboard Radius: 241mm, Scale: 813mm, Nut width: 38.1 mm,  Nut: synthetic bone, 20 Medium jumbo frets",
+        "price":222,
+        "category":3,
+        "rating":3.4,
+        "image_url":"",
+        "image":"bass_4a.png"
+        }
+    },
+    {
+        "pk":13,
+        "model":"products.product",
+        "fields":{
+        "sku":"keyboard1",
+        "name":"Thomann SP-5600",
+        "description":"88 keys with hammer action, 600 sounds, 230 tyles, 120 internal songs, 128-voice polyphony, Arrange Function: Start Stop, Sync Start, Intro / Ending, Fill A, Fill B, Functions: Duo (Twinova), Split, Layer, Sustain One Touch Setting Metronome",
+        "price":379,
+        "category":4,
+        "rating":4,
+        "image_url":"",
+        "image":"keyboard_1a.png"
+        }
+    },
+    {
+        "pk":14,
+        "model":"products.product",
+        "fields":{
+        "sku":"keyboard2",
+        "name":"Thomann SP-5600 Deluxe Set",
+        "description":"88 keys with hammer action, 600 sounds, 230 tyles, 120 internal songs, 128-voice polyphony, Arrange Function: Start Stop, Sync Start, Intro / Ending, Fill A, Fill B, Functions: Duo (Twinova), Split, Layer, Sustain One Touch Setting Metronome",
+        "price":533,
+        "category":4,
+        "rating":4.4,
+        "image_url":"",
+        "image":"keyboard_2a.png"
+        }
+    },
+    {
+        "pk":15,
+        "model":"products.product",
+        "fields":{
+        "sku":"keyboard3",
+        "name":"Viscount Physis Piano K5 EX",
+        "description":"76 Weighted keys with hammer action, Velocity sensitive, After touch: can be calibrated from 0% - 100%, 9 Assignable sliders, 9 Endless rotary knobs, 9 Buttons, 4 controller banks, 128 Performances with 4 scenes and 8 zones",
+        "price":533,
+        "category":4,
+        "rating":5,
+        "image_url":"",
+        "image":"keyboard_3a.png"
+        }
+    },
+    {
+        "pk":16,
+        "model":"products.product",
+        "fields":{
+        "sku":"keyboard4",
+        "name":"AKAI Professional MPK 249",
+        "description":"49 Semi-weighted keys, 16 MPC pads with RGB lighting, 8 Assignable knobs, faders and buttons (each), Inputs for expression and sustain pedal, Arpeggiator, MPC Note Repeat, MPC full level, Tap Tempo and Time Division, Backlit LCD display",
+        "price":533,
+        "category":4,
+        "rating":3.4,
+        "image_url":"",
+        "image":"keyboard_4a.png"
         }
     }
 ]

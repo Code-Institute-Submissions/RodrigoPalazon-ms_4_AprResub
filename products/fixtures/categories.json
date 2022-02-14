@@ -22,6 +22,14 @@
           "name":"bass",
           "friendly_name":"Bass"
        }
+    },
+    {
+       "pk":4,
+       "model":"products.category",
+       "fields":{
+          "name":"keyboard",
+          "friendly_name":"keyboard"
+       }
     }
 ]
     
