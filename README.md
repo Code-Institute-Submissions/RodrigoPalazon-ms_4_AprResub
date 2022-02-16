@@ -144,7 +144,7 @@ A superuser can visit:
 
 **ER Diagram**
 
-![ReadmeImage](medias/ERDiagram.png)
+![ReadmeImage](media/ERDiagram.png)
 
 <span id="wireframes"></span>
 
