@@ -39,7 +39,9 @@ def all_products(request):
             categories = Category.objects.filter(name__in=categories)
 
         if 'q' in request.GET:
+            
             query = request.GET['q']
+            print(request)
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
