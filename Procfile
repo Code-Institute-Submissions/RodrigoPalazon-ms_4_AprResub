@@ -1,1 +1,1 @@
-web: gunicorn milestone4-rockstore.wsgi:application
+web: gunicorn ms_4.wsgi:application
