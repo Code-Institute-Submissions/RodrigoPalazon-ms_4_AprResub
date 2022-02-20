@@ -21,12 +21,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ay!$!0xaewocti&y+d$nj)9*148w!)rj#sya4r^3&76ex7=@to'
+if 'SECRET_KEY' in os.environ:
+    SECRET_KEY  = os.environ.get('SECRET_KEY')
+else:
+    SECRET_KEY = 'django-insecure-ay!$!0xaewocti&y+d$nj)9*148w!)rj#sya4r^3&76ex7=@to'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['milestone4-rockstore.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['milestone4-rockstore.herokuapp.com', 'localhost', '127.0.0.1', '127.0.0.1:8000']
 
 
 # Application definition
@@ -121,8 +124,8 @@ WSGI_APPLICATION = 'ms_4.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
+        'default': dj_database_url.parse('postgres://bozldfntdhiszc:15e987df8ac135c6f70c10d5d94aa336c224b0453246273396b6250b3a98ac03@ec2-52-209-185-5.eu-west-1.compute.amazonaws.com:5432/d2gvfh8an6gnfg')
+}
 else:
     DATABASES = {
         'default': {
