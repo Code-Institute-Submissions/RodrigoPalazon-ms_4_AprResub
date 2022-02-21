@@ -2,7 +2,7 @@
 
 ## The ROCKShow is a fictional online musical instruments store. The stores purpose is to sell different types of instruments, such as Guitar, Drums, Bass, and Keyboard. The store will allow the owner to make more sales by moving to an online platform. 
 
-#### The live website can be viewed [PUT YOUR LINK here]()
+#### The live website can be viewed [https://milestone4-rockstore.herokuapp.com]()
 
 <br>
 
