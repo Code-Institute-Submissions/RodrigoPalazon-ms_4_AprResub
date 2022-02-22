@@ -2,7 +2,7 @@
 
 ## The ROCKShow is a fictional online musical instruments store. The stores purpose is to sell different types of instruments, such as Guitar, Drums, Bass, and Keyboard. The store will allow the owner to make more sales by moving to an online platform. 
 
-#### The live website can be viewed [https://milestone4-rockstore.herokuapp.com]()
+#### The live website can be viewed [here](http://milestone4-rockstore.herokuapp.com)
 
 <br>
 
@@ -148,25 +148,18 @@ A superuser can visit:
 
 <span id="wireframes"></span>
 
-<!--
-### 4.Skeleton
 
-**An inital layout of the file structure can be seen here.**
+### 4.Wireframes
 
-![ReadmeImage](readme_images/file_structure.jpeg)
+ **Home page wireframe can be viewed [here](./media/wireframe_desktop_home.png)**
+ 
+ **Products page wireframe can be viewed [here](./media/wireframe_desktop_products_list.png)**
+ 
+ **Shopping Bag page wireframe can be viewed [here](./media/wireframe_desktop_shopping_bag.png)**
 
- **Desktop wireframes can be viewed [here](https://github.com/EllyC20/The-BookStore-MS4/tree/master/readme_images/wireframes/lg-device)**
+ **Checkout page wireframe can be viewed [here](./media/wireframe_desktop_checkout.png)**
 
- **Mobile wireframes can be viewed [here](https://github.com/EllyC20/The-BookStore-MS4/tree/master/readme_images/wireframes/sm-device)** 
 
- **Tablet or medium device sizes can be viewed [here](https://github.com/EllyC20/The-BookStore-MS4/tree/master/readme_images/wireframes/md-device)**
-
- **When viewing the wireframes there are some changes that should be noted, they are detailed below.**
-
- * Initally the log in / register functionality was supposed to be an expanding form from the side of the viewport, throughtout development this didn't feel intuitive or what users are used it. Having forms users can visit to register / log in follows a conventional way of providing these features.
- * The contact page was going to be a modal, however as the contact page evolved to contain a newsletter subscription a modal was no longer suitable.
- * On the homepage there was due to be a "recently added" section displaying the most recently added products. However due to time constraints and too large of a project scope, this was not completed. This could be a future feature.
- * The "quick shop" button on product page was not implemented as it did not visually look good and made the page feel too "busy".
 
 <span id="surface"></span>
 
@@ -174,17 +167,22 @@ A superuser can visit:
 
 **Colours**
 
-* I kept the colours of the site, consistent and subtle. The colours flow together nicely and allow easy use of the site without overwhelming the user. The colours hold positive connotations - yellow and green are associated as positive / success colours.
+* I kept the colours of the site, consistent and subtle. The colours flow together nicely and allow easy use of the site without overwhelming the user. The colours hold neutral connotations - black and white with some details in dark red for purposely highlight specifics elements like buttons, icons, and inputs.
 
-![Colours](readme_images/ms4_colours.png)
+ - Dark Red: rgb(75, 1, 1);
+
+ - Black: #222;
+
+ - White: white;
+
 
 **Font**
 
-* I used Roboto Mono for the body text, and Bebas Neue for headings, brand name or text that required attention. The two fonts go well together and I used Google Fonts to choose this pairing. They feel modern together and are not difficult to read on any screen size. 
+* I used Lato for the whole application, for brand name or text that required attention I've changed the font weight, style and element(following SEO principals). I used Google Fonts to choose this pairing. It feels modern together and are not difficult to read on any screen size. 
 
 **Images**
 
-* The home page has a carousel which showcases images related to the purpose of the site. These images show books, immediately informing the user of what the site does. They're comforting images for people who enjoy reading, showing a relaxing atmosphere such as a libary.
+* All the images applied in the application were imported from the real Music Shop, that is possible to check it [here](https://www.thomann.de/gb/index.html)
 
 <br>
 
@@ -223,21 +221,15 @@ A superuser can visit:
 
 ### Current Features 
 
-* Home page with carousel image.
-* Footer with social media links and 2 common e-commerce pages (FAQ's and Returns)
-* Product page with pagination 
 * Product page features a "filter by" option allowing users to choose how they see products.
 * Categories dropdown from Navbar, allowing the user to access specific categories.
 * Product detail page showing details.
 * A contact page that provides feedback to the user after the form is submitted.
 * A newsletter sign up. 
-* Superuser ability to send newsletters to subscribers.
 * A functional checkout process that requires a user to complete a valid form.
 * Stripe payments, with and without card authentication. (Test card numbers can be used to prompt an authentication request.)
 * Toast messages throughout user journey.
 * Confirmation emails of orders.
-* Contact emails are sent to a "business" email address.
-* Option to add reviews to products as a logged in user.
 
 
 ### Future Feautures
@@ -246,6 +238,10 @@ A superuser can visit:
 * Social media login / registration.
 * A wishlist or favourites option, where users can save items to their profile.
 * A loyalty programme where users receieve free shipping after so many orders or build up points. 
+* Contact emails are sent to a "business" email address.
+* Option to add reviews to products as a logged in user.
+* A newsletter sign up.
+* Superuser ability to send newsletters to subscribers.
 
 <br>
 
@@ -264,8 +260,6 @@ A superuser can visit:
 
 ## Frameworks, Libaries & Other Tools Used 
 
-* [Gitpod](https://www.gitpod.io/)
-  - For development of the project.
 * [Django](https://docs.djangoproject.com/en/3.2/)
   - Backend framework for this project.
 * [Github](https://github.com/)
@@ -274,28 +268,20 @@ A superuser can visit:
   - Used for version control.
 * [Google Fonts](https://fonts.google.com/)
   - To implement the fonts used.
-* [TinyPng](https://tinypng.com/)
-  - To compress image sizes.
-* [Balsamiq](https://balsamiq.com/)
+* [Figma](https://frontify.com/)
   - To design wireframes.
 * [Heroku](https://id.heroku.com/)
   - Cloud platform to deploy the project.
-* [Coolors](https://coolors.co/palettes/trending)
-  - To visualise a colour scheme.
 * [Font Awesome](https://fontawesome.com/)
   - For any icons within the site.
 * [cdnjs](https://cdnjs.com/)
   - To get Font Awesome linked.
-* [Lucidchart](https://www.lucidchart.com/pages/) 
-  - For "ER Digram".
 
 <br>
 
 <span id="testing"></span>
 
 ## Testing 
-
-All testing detail can be found [here.](https://github.com/EllyC20/The-BookStore-MS4/blob/master/TESTING.md) 
 
 <span id="deployment"></span>
 
@@ -407,26 +393,89 @@ web: gunicorn name_of_application.wsgi:application
 
 <span id="credits"></span>
 
-## Credits 
+# Credits
 
-### Content
+## Code
 
-* The description of the books on the product details page are taken from [Book Depository](https://www.bookdepository.com/)
-* Home page content, is taken from [Waterstones About Us](https://www.waterstones.com/help/about-us/44) and edited slightly for educational purposes only.
-* Footer / FAQ written by me. 
-* Contact page, written by me. 
+- This whole application was based on the Code Institute project Boutique Ado, and I used the base code as a template and main structure for my application. I made the necessary
+adjustments both the code(strucutre) and database to achieve the expected result.
+    - [Code Institute Reference](https://github.com/ckz8780/boutique_ado_v1)<br/>
+    Author: [Chris Z.](https://github.com/ckz8780)
 
-### Media 
+- The following repositories were used as references to this project as well:
+    - [Elly](https://github.com/EllyC20/The-BookStore-MS4)<br/>
+    Author: [Elly](https://github.com/EllyC20)
 
-* The stationary images (Office Supplies) are taken from [Pixabay](https://pixabay.com/)
-* The book cover images are taken from a dataset on [Kaggle](https://www.kaggle.com/lukaanicin/book-covers-dataset)
-* The home page carousel images are from [Pixabay](https://pixabay.com/)
 
-### Acknowledgements
+    - [GrowApps TM](http://ms3-project-ci.herokuapp.com/home)<br/>
+    Author: [Goran Kuzma](https://github.com/kuzGo)
 
-* To the Code Institute for the course content, and the last walk through project "Boutique Ado" which was used to implement some features.
-* To Precious my mentor, for his time and guidance.
-* To Tutor Support who have been extremeley helpful and willing with any questions.
-* Slack community for providing help where possible.
-* Stack Overflow for general queries.
- -->
+
+    - [Read It](http://ms3-project-ci.herokuapp.com/home)<br/>
+    Author: [Taylor Brookes](https://github.com/taybro23)
+
+- For technical support I used the Slack software, connecting with many [Code Institute's](https://codeinstitute.net/) students, and also the following platforms and Video Tutorials:
+
+    - [W3C School](https://www.w3schools.com/), official documentation.
+    
+    - [Flask Tutorial](https://www.youtube.com/watch?v=mqhxxeeTbu0&list=PLzMcBGfZo4-n4vJJybUVV3Un_NFS5EOgX)<br/>
+        Author: [Tech with Tim](https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg)
+    
+    - [Django for Beginners Tutorial](https://www.youtube.com/watch?v=sm1mokevMWk) <br/>
+        Author: [Tech with Tim](https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg)
+
+    - [Learn Python Tutorial](https://www.youtube.com/watch?v=rfscVS0vtbw&t=1s)<br/>
+        Author: [freeCodeCamp](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
+
+    - [Learn AWS Tutorial](https://www.youtube.com/watch?v=g2JOHLHh4rI)<br/>
+        Author: [freeCodeCamp](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
+
+## README.md
+For the README.md file I used as model the [Code Institute](https://codeinstitute.net/) repository, such as the other students project's repositories as well (mentioned above), including my owns READMEs files from previous projects:
+
+- [Code Institute Repository](https://github.com/Code-Institute-Solutions/SampleREADME)<br/>
+    Author:[Matt Rudge](https://github.com/lechien73)
+
+- [GitHub MarkDown Documentation](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+
+
+## Images
+
+Beneath you can find the links for the images used in the home.html page:
+- [Guitar 1](https://www.thomann.de/gb/harley_benton_sc_450plus_cb_vintage_series.htm)
+- [Guitar 2](https://www.thomann.de/gb/epiphone_les_paul_custom_ebony.htm)
+- [Guitar 3](https://www.thomann.de/gb/harley_benton_ex_84_modern_benton_blue.htm)
+- [Guitar 4](https://www.thomann.de/gb/jackson_kvx_mg7_king_v_x_series_sbk.htm)
+
+- [Bass 1](https://www.thomann.de/nl/harley_benton_hbb1975_na.htm)
+- [Bass 2](https://www.thomann.de/nl/marcus_miller_v7_alder_4_awh_2nd_gen.htm)
+- [Bass 3](https://www.thomann.de/nl/hoefner_ignition_cavern_se.htm)
+- [Bass 4](https://www.thomann.de/nl/fender_sq_aff._jaguar_bass_mn_h_lpb.htm)
+
+- [Keyboard 1](https://www.thomann.de/nl/thomann_sp_5600.htm)
+- [Keyboard 2](https://www.thomann.de/nl/marcus_miller_v7_alder_4_awh_2nd_gen.htm)
+- [Keyboard 3](https://www.thomann.de/nl/viscount_physis_piano_k5_ex.htm)
+- [Keyboard 4](https://www.thomann.de/nl/fender_sq_aff._jaguar_bass_mn_h_lpb.htm)
+
+- [Drums 1](https://www.thomann.de/nl/pearl_decade_maple_6pc_satin_gold.htm)
+- [Drums 2](https://www.thomann.de/nl/tama_superstar_classic_kit_22_pclp.htm)
+- [Drums 3](https://www.thomann.de/nl/tama_star_drum_bubinga_white_ebony.htm)
+- [Drums 4](https://www.thomann.de/nl/tama_club_jam_vintage_kit_cmw.htm)
+
+The images used by the users were not inspected by the Admin.
+
+### Bugs
+#### Heroku, Git, Peer Review ,and Typo issues:
+
+-  I received support from the Software Engineer and my personal friend [Robson Silva](https://www.linkedin.com/in/rsilvanet/).
+
+## Acknowledgements
+
+-	I would like to thank my mentor, Jack Wachira, for his guidance, feedback, and great advices. 
+-	The slack community for helping me with my coding queries.
+-	My personal friends that are always supporting me on this journey. 
+-	The Colleagues that helped with the 'Pure Review' and 'Refactoring'. 
+
+
+[Back to contents](#table-of-contents)
