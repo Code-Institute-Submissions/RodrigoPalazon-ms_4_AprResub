@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import dj_database_url
 from pathlib import Path
+# import mimetypes
+# mimetypes.add_type("text/css", ".css", True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +29,7 @@ else:
     SECRET_KEY = 'django-insecure-ay!$!0xaewocti&y+d$nj)9*148w!)rj#sya4r^3&76ex7=@to'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['milestone4-rockstore.herokuapp.com', 'localhost', '127.0.0.1', '127.0.0.1:8000']
 
@@ -176,9 +178,13 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
+print(STATIC_ROOT)
+
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+print(os.environ.get("AWS_SECRET_ACCESS_KEY"))
 
 if 'USE_AWS' in os.environ:
     # Cache control
@@ -186,6 +192,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
+    print(AWS_S3_OBJECT_PARAMETERS)
 
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'milestone4-rockstore'
