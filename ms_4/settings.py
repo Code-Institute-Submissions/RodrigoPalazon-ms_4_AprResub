@@ -180,6 +180,7 @@ if 'USE_AWS' in os.environ:
     # print(AWS_S3_OBJECT_PARAMETERS)
 
     # Bucket Config
+    AWS_DEFAULT_ACL = None
     AWS_STORAGE_BUCKET_NAME = 'milestone4-rockstore'
     AWS_S3_REGION_NAME = 'eu-central-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
