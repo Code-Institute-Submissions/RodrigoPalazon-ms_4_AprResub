@@ -9,7 +9,7 @@
         "price":199,
         "category":1,
         "rating":4.6,
-        "image_url":"https://milestone4-rockstore.s3.eu-central-1.amazonaws.com/static/css/media/",
+        "image_url":"",
         "image":"guita_1a.png"
         }
     },
