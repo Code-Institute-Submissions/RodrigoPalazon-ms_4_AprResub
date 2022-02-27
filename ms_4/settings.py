@@ -26,7 +26,7 @@ else:
     SECRET_KEY = 'django-insecure-ay!$!0xaewocti&y+d$nj)9*148w!)rj#sya4r^3&76ex7=@to'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['milestone4-rockstore.herokuapp.com', 'localhost', '127.0.0.1', '127.0.0.1:8000']
 
