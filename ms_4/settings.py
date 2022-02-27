@@ -23,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 if 'SECRET_KEY' in os.environ:
     SECRET_KEY  = os.environ.get('SECRET_KEY')
 else:
-    SECRET_KEY = 'django-insecure-ay!$!0xaewocti&y+d$nj)9*148w!)rj#sya4r^3&76ex7=@to'
+    # SECRET_KEY = 'django-insecure-ay!$!0xaewocti&y+d$nj)9*148w!)rj#sya4r^3&76ex7=@to'
+    print('Deu ruim !')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
