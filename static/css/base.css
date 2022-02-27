@@ -185,6 +185,14 @@ input[name='q']::placeholder {
 
 /* Allauth form formatting */
 
+#signup_form {
+    margin-top: 15%;
+    color:black;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
     color: #6c757d; /* text-secondary */
