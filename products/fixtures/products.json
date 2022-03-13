@@ -10,7 +10,8 @@
         "category":1,
         "rating":4.6,
         "image_url":"",
-        "image":"guita_1a.png"
+        "image":"guita_1a.png", 
+        "music_style": 1
         }
     },
     {
@@ -24,7 +25,8 @@
         "category":1,
         "rating":4.6,
         "image_url":"",
-        "image":"guita_2a.png"
+        "image":"guita_2a.png",
+        "music_style": 3
         }
     },
     {
@@ -38,7 +40,8 @@
         "category":1,
         "rating":4,
         "image_url":"",
-        "image":"guita_3a.png"
+        "image":"guita_3a.png",
+        "music_style": 1
         }
     },
     {
@@ -52,7 +55,8 @@
         "category":1,
         "rating":4,
         "image_url":"",
-        "image":"guita_4a.png"
+        "image":"guita_4a.png",
+        "music_style": 2
         }
     },
     {
@@ -66,7 +70,8 @@
         "category":2,
         "rating":4.8,
         "image_url":"",
-        "image":"drums_1a.png"
+        "image":"drums_1a.png",
+        "music_style": 3
         }
     },
     {
@@ -80,7 +85,8 @@
         "category":2,
         "rating":4.2,
         "image_url":"",
-        "image":"drums_2a.png"
+        "image":"drums_2a.png",
+        "music_style": 1
         }
     },
     {
@@ -94,7 +100,8 @@
         "category":2,
         "rating":5,
         "image_url":"",
-        "image":"drums_3a.png"
+        "image":"drums_3a.png",
+        "music_style": 2
         }
     },
     {
@@ -108,7 +115,8 @@
         "category":2,
         "rating":5,
         "image_url":"",
-        "image":"drums_4a.png"
+        "image":"drums_4a.png",
+        "music_style": 1
         }
     },
     {
@@ -122,7 +130,8 @@
         "category":3,
         "rating":5,
         "image_url":"",
-        "image":"bass_1a.png"
+        "image":"bass_1a.png",
+        "music_style": 3
         }
     },
     {
@@ -136,7 +145,8 @@
         "category":3,
         "rating":3.9,
         "image_url":"",
-        "image":"bass_2a.png"
+        "image":"bass_2a.png",
+        "music_style": 2
         }
     },
     {
@@ -150,7 +160,8 @@
         "category":3,
         "rating":3.7,
         "image_url":"",
-        "image":"bass_3a.png"
+        "image":"bass_3a.png",
+        "music_style": 2
         }
     },
     {
@@ -164,7 +175,8 @@
         "category":3,
         "rating":3.4,
         "image_url":"",
-        "image":"bass_4a.png"
+        "image":"bass_4a.png",
+        "music_style": 1
         }
     },
     {
@@ -178,7 +190,8 @@
         "category":4,
         "rating":4,
         "image_url":"",
-        "image":"keyboard_1a.png"
+        "image":"keyboard_1a.png",
+        "music_style": 3
         }
     },
     {
@@ -192,7 +205,8 @@
         "category":4,
         "rating":4.4,
         "image_url":"",
-        "image":"keyboard_2a.png"
+        "image":"keyboard_2a.png",
+        "music_style": 2
         }
     },
     {
@@ -206,7 +220,8 @@
         "category":4,
         "rating":5,
         "image_url":"",
-        "image":"keyboard_3a.png"
+        "image":"keyboard_3a.png",
+        "music_style": 1
         }
     },
     {
@@ -220,7 +235,8 @@
         "category":4,
         "rating":3.4,
         "image_url":"",
-        "image":"keyboard_4a.png"
+        "image":"keyboard_4a.png",
+        "music_style": 3
         }
     }
 ]

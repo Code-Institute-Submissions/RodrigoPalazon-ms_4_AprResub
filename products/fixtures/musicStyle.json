@@ -1,0 +1,27 @@
+[
+    {
+       "pk":1,
+       "model":"products.music_style",
+       "fields":{
+          "name":"rock",
+          "friendly_name":"Rock"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.music_style",
+       "fields":{
+          "name":"pop",
+          "friendly_name":"Pop"
+       }
+    },
+    {
+      "pk":3,
+      "model":"products.music_style",
+      "fields":{
+         "name":"blues",
+         "friendly_name":"Blues"
+      }
+   }
+]
+    
