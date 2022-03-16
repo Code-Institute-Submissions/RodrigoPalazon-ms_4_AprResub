@@ -17,10 +17,10 @@ class Category(models.Model):
 
 # newFeatures
 
-class MusicStyle(models.Model):
+class Style(models.Model):
 
     class Meta:
-        verbose_name_plural = 'Music Styles'
+        verbose_name_plural = 'Styles'
 
     name = models.CharField(max_length=50)
     friendly_name = models.CharField(max_length=50, null=True, blank=True)
@@ -43,7 +43,7 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    music_style = models.ForeignKey('MusicStyle', null=True, blank=True, on_delete=models.SET_NULL)
+    style = models.ForeignKey('Style', null=True, blank=True, on_delete=models.SET_NULL)
 
 
     def __str__(self):

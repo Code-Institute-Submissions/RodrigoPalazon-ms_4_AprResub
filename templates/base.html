@@ -139,12 +139,34 @@
     {% block content %}
     {% endblock %}
 
+
+    {% block footer %}
+    <footer class="mt-auto py-3">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="">Returns</a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram icon"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook icon"><i
+                            class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% endblock %}
+
+
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
     {% endblock %}
 
-    <!-- kjhdfkashdkfljahksdjh -->
   </body>
 </html>
