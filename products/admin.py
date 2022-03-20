@@ -28,6 +28,15 @@ class MusicStyleAdmin(admin.ModelAdmin):
     )
 
 
+class CelebrityAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'comment',
+        'image',
+        'friendly_name',
+        'product',
+    )
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Style, MusicStyleAdmin)

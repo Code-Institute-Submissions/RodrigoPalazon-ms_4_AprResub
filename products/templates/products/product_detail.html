@@ -106,23 +106,29 @@
                             -->
 
                              <div class="review-detail">
+                                 <h3> Celebrities' Comments: </h3>
                     
                                 <div class="card">
-                                    <h5 class="card-header">By: milestonefour</h5>
+                                    <h5 class="card-header">{{product.celebrity.name}}</h5>
                                     <div class="card-body">
-                                      <h5 class="card-title">testing review</h5>
-                                      <p class="card-text">testing content</p>
-                                      <div class="product-stars" data-value="2"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i></div>
-                                    </div>
-                                </div>
-                                <br>
-                                
-                                <div class="card">
-                                    <h5 class="card-header">By: superuserone</h5>
-                                    <div class="card-body">
-                                      <h5 class="card-title">test</h5>
-                                      <p class="card-text">test</p>
-                                      <div class="product-stars" data-value="4"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i></div>
+                                     <!-- ----------------- -->
+                                      
+                                     <!-- <img src=""{{ product.celebrity.image_url }}" " alt="{{ product.celebrity.name }}"> -->
+
+                                     {% if product.celebrity.image %}
+                                     <a href="{{ product.celebrity.image.url }}" target="_blank">
+                                         <img class="card-img-top img-fluid" style="width:50%" src="{{ product.celebrity.image.url }}" alt="{{ product.celebrity.name }}">
+                                     </a>
+                                     {% else %}
+                                     <a href="">
+                                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.celebrity.name }}">
+                                     </a>
+                                 {% endif %}
+
+                                     <!-- ---------------------- -->
+
+                                      <p class="card-text">{{product.celebrity.comment}}</p>
+                                     
                                     </div>
                                 </div>
                                 <br>

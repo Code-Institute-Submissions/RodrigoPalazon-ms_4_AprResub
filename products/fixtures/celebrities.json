@@ -1,0 +1,14 @@
+[
+    {
+        "pk":1,
+        "model":"products.celebrity",
+        "fields":{
+        "name":"Slash",
+        "comment":"For sure, this is the best guitar I have ever played in all these yeaof my career. This is part of my history, and the history of Rock and Roll!",
+        "image_url":"https://oor.nl/media/2016/04/1390318236.Slash-2012-640-CRED-Travis-Shinn.jpg",
+        "image":"", 
+        "friendly_name":"Slash",
+        "product": 1
+        }
+    }
+]
