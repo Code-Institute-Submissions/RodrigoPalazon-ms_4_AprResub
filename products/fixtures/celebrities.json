@@ -10,5 +10,41 @@
         "friendly_name":"Slash",
         "product": 1
         }
+    },
+    {
+        "pk":2,
+        "model":"products.celebrity",
+        "fields":{
+        "name":"Axl",
+        "comment":"Proud of Slash and this guitar!",
+        "image_url":"https://static1.qmusic.medialaancdn.be/site/w800/4/7d/20/94/1505484/axl-rose-young-photo.jpg",
+        "image":"", 
+        "friendly_name":"Axl",
+        "product": 1
+        }
+    },
+    {
+        "pk":3,
+        "model":"products.celebrity",
+        "fields":{
+        "name":"Steve Vai",
+        "comment":"Best guitar for beginers!",
+        "image_url":"http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTN8_RWX_hIy-gTUEjKbLWLjG2kXHQz6YstL3t20J3KWBJv1cRbHr2-Jgf1MR3u",
+        "image":"", 
+        "friendly_name":"Steve Vai",
+        "product": 1
+        }
+    },
+    {
+        "pk":4,
+        "model":"products.celebrity",
+        "fields":{
+        "name":"Richard Bona",
+        "comment":"This bass gives me freedom in my musicality!",
+        "image_url":"https://www.notreble.com/wp-content/uploads/2015/03/Richard-Bona-og.jpg",
+        "image":"", 
+        "friendly_name":"Richard Bona",
+        "product": 10
+        }
     }
 ]
