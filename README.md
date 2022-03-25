@@ -38,6 +38,7 @@
 * I want to be able to use the site intuitively. 
 * I want to be able to search for products.
 * I want to be able to view the details of individual products.
+* I want to be able to view famous artists and/or musicians talking about the products.
 * I want to be able to order products by category.
 * I want to be able to order products by finer details such as A-Z, price low to high or vice versa. 
 * I want to be able to add products to my basket and checkout, without an account.
@@ -50,17 +51,15 @@
 * I want to be able to edit product details.
 * I want to be able to add new products.
 * I want to encourage returning users by having an easy to use site.
-<!-- * I want to have a contact form where users can send any questions. -->
 
 **As a Returning User/Signed In User**
 
 * I want to be able to edit my delivery address and information.
-* I want to have a personalised profile that shows any previous orders.
+* I want to have a customized profile that shows any previous orders.
 * I want to be able to log in to a previously registered profile. 
 * I want to be able to leave reviews for products.
 
 **Key Benefits Of Having An Account**
-* As a registered user, you can leave a review of a product. A non registered user can not.
 * As a registered user, you have a profile. Here you can view previous orders and save default delivery information. A non registered user does not have a profile.
 
 <span id="strategy"></span>
@@ -96,11 +95,8 @@ A new user can visit:
   * Can access the register and login pages 
   * The products page
   * Sign up for newsletter on contact page
-  * Specific category pages
   * The basket
   * The checkout
-  <!-- * Contact form -->
-
 
 **As A Registered User (Logged In)** 
 A returning user can visit:
@@ -113,7 +109,6 @@ A returning user can visit:
   * Specific category pages
   * The basket
   * The checkout
-  <!-- * Contact form -->
 
 **As Superuser (Site Owner)**
 A superuser can visit:
@@ -128,7 +123,6 @@ A superuser can visit:
   * Specific category pages
   * The basket
   * The checkout
-  <!-- * Contact form -->
 
 <span id="database"></span>
 
@@ -145,6 +139,101 @@ A superuser can visit:
 **ER Diagram**
 
 ![ReadmeImage](media/ERDiagram.png)
+
+<!-- **Profile App**
+
+**UserProfile model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ User | user | OneToOneField |  User, on_delete=models.CASCADE
+ Phone number | default_phone_number | CharField | max_length=20, null=True, blank=True
+ Street address 1 | default_street_address1 | CharField | max_length=80, null=True, blank=True
+ Street address 2 | default_street_address2 | CharField | max_length=80, null=True, blank=True
+ Town/City | default_town_or_city | Charfield | max_length=40, null=True, blank=True
+ Postcode | default_postcode | CharField | max_length=20, null=True, blank=True
+ Country | default_country | CountryField | blank_label='Country', null=True, blank=True
+
+**Checkout App**
+
+**Order model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ Order number | order_number | CharField | max_length=32, null=False, editable=False
+ User profile | user_profile | ForeignKey | UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders'
+ Full name | full_name | CharField | max_length=50, null=False, blank=False
+ Email| email| EmailField | max_length=254, null=False, blank=False
+ Phone number | phone_number | Charfield | max_length=20, null=False, blank=False
+ Country| country | CountryField | blank_label='Country *', null=False, blank=False
+ Postcode | postcode | CharField | max_length=20, null=True, blank=True
+ Town/City | town_or_city | CharField | max_length=40, null=False, blank=False
+ Street address 1 | street_address1 | CharField | max_length=80, null=False, blank=False
+ Street address 2 | street_address2 | CharField | max_length=80, null=True, blank=True
+ Date | date | DateTimeField | auto_now_add=True
+ Delivery cost | delivery_cost | DecimalField | max_digits=6, decimal_places=2, null=False, default=0
+ Order total | order_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
+ Grand total | grand_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
+ Original bag | original_bag | TextField | null=False, blank=False, default=''
+ Stipe pid | stripe_pid | CharField | max_length=254, null=False, blank=False, default=''
+
+**OrderLineItem model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ Order  | order | ForeignKey | Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'
+ Product | product | ForeignKey | Product, null=False, blank=False, on_delete=models.CASCADE
+ Quantity | quantity | IntegerField | null=False, blank=False, default=0
+ Lineitem total | lineitem_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
+
+**Products App**
+
+**Category model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ name | name | CharField | max_length=254
+ Friendly name | friendly_name | CharField | max_length=254, null=True, blank=True
+
+**Product model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ Category| category| ForeignKey | Category, null=True, blank=True, on_delete=models.SET_NULL
+ Image | image | ImageField | null=True, blank=True
+ Name | name | CharField | max_length=300
+ Author | author | CharField | max_length=300, blank=True
+ Description | description | TextField | null=True, blank=True
+ Image url | image_url | URLField | max_length=1024, null=True, blank=True
+ Price | price | DecimalField | max_digits=6, decimal_places=2
+
+**ProductReview model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ Product | product | ForeignKey | Product, null=True, blank=True, on_delete=models.SET_NULL, related_name='reviews'
+ User | user | ForeignKey | User, null=True, blank=True, on_delete=models.CASCADE
+ Title | title | CharField | max_length=254
+ Content | content | TextField | 
+ Rating | rating | IntegerField | choices=rating_selection, default=3
+ Date Added | date_added | DateTimeField | auto_now_add=True
+
+**Home App**
+
+**Subscribers model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ Email | email | EmailField | null=True
+ Date | date | DateTimeField | auto_now_add=True
+
+ **SubscriberEmail model**
+
+ | **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ Title | title | CharField | max_length=200, null=True
+ Message | message | TextField | null=True -->
+
 
 <span id="wireframes"></span>
 
@@ -224,6 +313,7 @@ A superuser can visit:
 * Product page features a "filter by" option allowing users to choose how they see products.
 * Categories dropdown from Navbar, allowing the user to access specific categories.
 * Product detail page showing details.
+* Comments from celebrities and/or famous musicians.
 * A contact page that provides feedback to the user after the form is submitted.
 * A newsletter sign up. 
 * A functional checkout process that requires a user to complete a valid form.
@@ -236,8 +326,8 @@ A superuser can visit:
 
 * Change newsletter to an API such as mailchimp, to send automated monthly or weekly updates.
 * Social media login / registration.
-* A wishlist or favourites option, where users can save items to their profile.
-* A loyalty programme where users receieve free shipping after so many orders or build up points. 
+* A wishlist or favorites option, where users can save items to their profile.
+* A loyalty programme where users receive free shipping after so many orders or build up points. 
 * Contact emails are sent to a "business" email address.
 * Option to add reviews to products as a logged in user.
 * A newsletter sign up.
@@ -281,7 +371,7 @@ A superuser can visit:
 
 <span id="testing"></span>
 
-## Testing 
+<!-- ## Testing  -->
 
 <span id="deployment"></span>
 
@@ -469,6 +559,7 @@ The images used by the users were not inspected by the Admin.
 #### Heroku, Git, Peer Review ,and Typo issues:
 
 -  I received support from the Software Engineer and my personal friend [Robson Silva](https://www.linkedin.com/in/rsilvanet/).
+-  I received support from the Software Engineer and my personal friend [Ricardo Schiavetti](https://www.linkedin.com/in/ricardoschiavetti/).
 
 ## Acknowledgements
 
