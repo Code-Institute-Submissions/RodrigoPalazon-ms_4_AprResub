@@ -93,21 +93,32 @@
                              
                              <div class="review-detail">
                                  <h3> Celebrities' Comments: </h3>
+                                 
+                                    
+
                                  {% if celebrity_list %}
                                     {% for c in celebrity_list %}
-                                    By: {{ c.name }} <br/>
-                                        {{ c.comment }}<br/>
-                                        <img class="card-img-top img-fluid" style="width:25%" src="{{ c.image_url }}" alt="{{c.name }}"/> <br/>
+                                    <div class="card mb-4 border border-dark">
+                                        <div class="card-header text-light bg-secondary d-flex">
+                                            <h5 class="card-title m-2">{{ c.name }}</h5>
+                                            <img class="card-img-top img-fluid" style="width:25%" src="{{ c.image_url }}" alt="{{c.name }}"/> <br/>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">{{ c.comment }}</p>
+                                        </div>
+                                    </div>
                                     {% endfor %}
                                 {% else %}
-                                <p>No Celebrities' Comments Yet!</p>
+                                <div class="card text-light bg-secondary">
+                                    <h5>No Celebrities' Comments Yet!</h5> 
+                                </div>
                                 {% endif %}
                                  
-                                 <div class="card">
+                                 <!-- <div class="card">
                                      <h5 class="card-header">By: </h5>
                                     
                                  </div>
-                                 <br>
+                                 <br> -->
 
                                 <!-- <div class="card">
                                     <h5 class="card-header">{{product.celebrity.name}}</h5>
